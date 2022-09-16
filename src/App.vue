@@ -1,9 +1,7 @@
-<script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-</script>
-
 <template>
   <div id="app">
+    <LoadingScreen />
+
     <header>
       <img
         alt="Vue logo"
@@ -26,6 +24,11 @@ import HelloWorld from "./components/HelloWorld.vue";
     <router-view />
   </div>
 </template>
+
+<script setup>
+import HelloWorld from "./components/HelloWorld.vue";
+import LoadingScreen from "./components/LoadingScreen.vue";
+</script>
 
 <style lang="scss" scoped>
 header {
