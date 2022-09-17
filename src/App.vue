@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <LoadingScreen />
+    <LoadingScreen v-if="loading" />
 
-    <header>
+    <!-- <header>
       <img
         alt="Vue logo"
         class="logo"
@@ -19,15 +19,32 @@
           <router-link to="/about">About</router-link>
         </nav>
       </div>
-    </header>
+    </header> -->
 
-    <router-view />
+    <router-view v-else />
   </div>
 </template>
 
-<script setup>
-import HelloWorld from "./components/HelloWorld.vue";
+<script>
+// import HelloWorld from "./components/HelloWorld.vue";
 import LoadingScreen from "./components/LoadingScreen.vue";
+
+export default {
+  components: {
+    // HelloWorld,
+    LoadingScreen,
+  },
+
+  data: () => ({
+    loading: true,
+  }),
+
+  mounted() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1500);
+  },
+};
 </script>
 
 <style lang="scss" scoped>
