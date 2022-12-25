@@ -1,5 +1,5 @@
 <template>
-  <header class="d-flex justify-content-between">
+  <header id="main-topbar" class="d-flex justify-content-between">
     <div>
       <img src="@/assets/ac-title.png" alt="Assassin's Creed title" />
     </div>
