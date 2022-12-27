@@ -1,10 +1,12 @@
 <template>
-  <img
-    class="blink w-100"
-    src="@/assets/ac-title.png"
-    alt="Assassin's Creed loader"
-  />
+  <div class="blink">
+    <MainTopbarVue largest-width />
+  </div>
 </template>
+
+<script setup>
+import MainTopbarVue from "@/components/MainTopbar.vue";
+</script>
 
 <style lang="scss" scoped>
 .blink {

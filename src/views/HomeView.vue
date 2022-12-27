@@ -1,14 +1,14 @@
 <template>
   <div>
-    <MainTopbar />
+    <MainTopbarVue />
 
     <main>
-      <TheWelcome />
+      <ThreeScene />
     </main>
   </div>
 </template>
 
 <script setup>
-import TheWelcome from "@/components/TheWelcome.vue";
-import MainTopbar from "@/components/MainTopbar.vue";
+import ThreeScene from "@/components/ThreeScene.vue";
+import MainTopbarVue from "@/components/MainTopbar.vue";
 </script>
