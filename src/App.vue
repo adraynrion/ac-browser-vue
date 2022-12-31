@@ -1,5 +1,8 @@
 <template>
-  <div id="app" class="w-100 h-100">
+  <div
+    id="app"
+    class="w-100 h-100"
+  >
     <LoadingScreen v-if="loading" />
 
     <router-view v-else />
@@ -7,7 +10,7 @@
 </template>
 
 <script>
-import LoadingScreen from "@/components/LoadingScreen.vue";
+import LoadingScreen from '@/components/LoadingScreen.vue'
 
 export default {
   components: {
@@ -20,8 +23,8 @@ export default {
 
   mounted() {
     setTimeout(() => {
-      this.loading = false;
-    }, 1500);
+      this.loading = false
+    }, 1500)
   },
-};
+}
 </script>

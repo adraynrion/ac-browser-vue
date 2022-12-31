@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import MainTopbarVue from "@/components/MainTopbar.vue";
+import MainTopbarVue from '@/components/MainTopbar.vue'
 </script>
 
 <style lang="scss" scoped>

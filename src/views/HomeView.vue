@@ -9,6 +9,6 @@
 </template>
 
 <script setup>
-import ThreeScene from "@/components/ThreeScene.vue";
-import MainTopbarVue from "@/components/MainTopbar.vue";
+import ThreeScene from '@/components/ThreeScene.vue'
+import MainTopbarVue from '@/components/MainTopbar.vue'
 </script>
